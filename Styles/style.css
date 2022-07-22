@@ -10,15 +10,6 @@ body { background-color: rgb(42, 82, 117);
     background-color: hsla(195,50%,50%,0.7);
 }
 
-/*from 385*/
-/*@media(min-width:385px) { 
-  a.navpage{
-    width:fit-content;
-    margin:auto;
-  }
-
-}*/
-
 @media(min-width:300px){
   .navpage{
     width:fit-content;
