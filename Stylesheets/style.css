@@ -1,0 +1,66 @@
+/* all page styling */
+body { background-color: rgb(42, 82, 117);
+       margin:0;
+     }
+
+#navbar{
+    height: 5.5vh;
+    width:100vw;
+    display: inline-flex;
+    background-color: hsla(195,50%,50%,0.7);
+}
+
+@media(min-width:300px){
+  .navpage{
+    width:fit-content;
+    margin:auto;
+    padding:0.4vh 2.5vw;
+    text-decoration:none;
+  }
+}
+
+/* min width is from that width and bigger */
+/* max width is from that width and smaller */
+
+.navpage,a:link{
+    color: rgb(253, 251, 251);
+}
+
+.navpage,a:visited{
+    color:rgb(0, 0, 0);
+}
+
+.navpage,a:hover{
+    color:rgb(255, 255, 255);
+}
+
+/*homepage styling*/
+
+#title{
+    display:inline-block;
+    margin: 0 30% 0 30%;
+}
+
+#intro{
+    margin: 0.4rem;
+    width: 52%;
+}
+
+/* contact me style */
+
+.contact{
+    display:inline-block;
+    width:23%;
+}
+
+#email{ display:inline-block; }
+
+#phone{ display:inline-block; }
+
+.text { 
+    display:inline-block;
+    width: 50%;
+    margin: 2%;
+}
+
+#name{ display:inline-block; }
