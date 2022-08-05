@@ -3,36 +3,83 @@ body { background-color: rgb(42, 82, 117);
        margin:0;
      }
 
-#navbar{
-    height: 5.5vh;
-    width:100vw;
-    display: inline-flex;
-    background-color: hsla(195,50%,50%,0.7);
-}
+@media(min-width:501px){
+    .navbar{
+        height: 5.5vh;
+        width:100vw;
+        display: inline-flex;
+        background-color: hsla(195,50%,50%,0.7);
+    }
 
-@media(min-width:300px){
-  .navpage{
-    width:fit-content;
-    margin:auto;
-    padding:0.4vh 2.5vw;
-    text-decoration:none;
-  }
+    .navpage{
+        width:fit-content;
+        margin:auto;
+        padding:0.4vh 2.5vw;
+        text-decoration:none;
+    }
 }
 
 /* min width is from that width and bigger */
 /* max width is from that width and smaller */
 
-.navpage,a:link{
-    color: rgb(253, 251, 251);
+@media(max-width:500px){
+
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    }
+
+    body{
+        transition:.9s linear;
+        overflow-x:hidden;
+    }
+
+    .navbar{ /*nav menu styles*/
+    background:hsla(195,50%,50%,0.7);
+    position: absolute;
+    left:-7.25em;
+    border-radius:1.2em;  
+    transition-duration:1s linear;
+    }
+
+    .navpage{ /*link text styles*/
+        display:flex;
+        flex-direction:column;
+        text-align: center;
+        text-decoration:none;
+        height:10vh;
+        padding:1em 1em;
+    }
+
+    .navtoggle{ /*burger nmenu button styles */
+        position:absolute;
+        top:1em;
+        transform:translateX(255%);
+        background:hsla(195,50%,50%,0.7);
+        border-radius:10px;
+        height:3.5em;
+        width:3.5em;
+    }
+
+    .nav-open, .navbar { transform: translateX(8.25%); }
+
+    .burgermenu::before{ content:'Menu'; }
+
+    .burgermenu::after{ display:none; }
+
+    .nav-open .burgermenu::before{ display:none; }
+
+    .nav-open .burgermenu::after{
+        display:contents;
+        content:'Close ❌';
+    }
 }
 
-.navpage,a:visited{
-    color:rgb(0, 0, 0);
-}
+.navpage, a:link{ color: rgb(255, 255, 255); }
 
-.navpage,a:hover{
-    color:rgb(255, 255, 255);
-}
+.navpage, a:visited{ color:rgb(0, 0, 0); }
+
+.navpage, a:hover{ color:rgb(255, 255, 255); }
 
 /*homepage styling*/
 
