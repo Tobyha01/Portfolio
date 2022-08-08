@@ -17,6 +17,10 @@ body { background-color: rgb(42, 82, 117);
         padding:0.4vh 2.5vw;
         text-decoration:none;
     }
+
+    .navtoggle{
+        display:none;
+    }
 }
 
 /* min width is from that width and bigger */
