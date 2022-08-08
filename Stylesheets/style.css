@@ -29,21 +29,16 @@ body { background-color: rgb(42, 82, 117);
 @media(max-width:500px){
 
     *::before,
-    *::after {
+    *::after{
     box-sizing: border-box;
     }
 
-    body{
-        transition:.9s linear;
-        overflow-x:hidden;
-    }
-
     .navbar{ /*nav menu styles*/
-    background:hsla(195,50%,50%,0.7);
-    position: absolute;
-    left:-7.25em;
-    border-radius:1.2em;  
-    transition-duration:1s linear;
+        background:hsla(195,50%,50%,.9);
+        position: absolute;
+        left:-7.25em;
+        top:.75em;
+        border-radius:1.2em;  
     }
 
     .navpage{ /*link text styles*/
@@ -65,7 +60,9 @@ body { background-color: rgb(42, 82, 117);
         width:3.5em;
     }
 
-    .nav-open, .navbar { transform: translateX(8.25%); }
+    .nav-open .navbar{ transform: translateX(115%); }
+
+     body .navbar{ transition:1.5s linear; }
 
     .burgermenu::before{ content:'Menu'; }
 
