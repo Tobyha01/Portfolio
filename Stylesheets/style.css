@@ -118,6 +118,25 @@ body { background-color: rgb(42, 82, 117);
     }
 }
 
+/* about me styles */
+
+@media(min-width:801px){
+    .text{ 
+        display:inline-block;
+        width: 50%;
+        margin: 2%;
+    }
+}
+
+@media(max-width:801px){
+    .text{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        margin: 0 2%;
+    }
+}
+
 /* contact me style */
 
 .contact{
@@ -128,11 +147,3 @@ body { background-color: rgb(42, 82, 117);
 #email{ display:inline-block; }
 
 #phone{ display:inline-block; }
-
-.text { 
-    display:inline-block;
-    width: 50%;
-    margin: 2%;
-}
-
-#name{ display:inline-block; }
