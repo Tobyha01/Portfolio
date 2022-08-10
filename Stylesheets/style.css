@@ -52,7 +52,7 @@ body { background-color: rgb(42, 82, 117);
 
     .navtoggle{ /*burger nmenu button styles */
         position:absolute;
-        top:1em;
+        top:3em;
         transform:translateX(255%);
         background:hsla(195,50%,50%,0.7);
         border-radius:10px;
@@ -76,6 +76,18 @@ body { background-color: rgb(42, 82, 117);
     }
 }
 
+@media(min-width:465px){
+    .navtoggle{
+        top:3em;
+    }
+}
+
+@media(max-width:464px){
+    .navtoggle{
+        top:6em;
+    }
+}
+
 .navpage, a:link{ color: rgb(255, 255, 255); }
 
 .navpage, a:visited{ color:rgb(0, 0, 0); }
@@ -85,13 +97,25 @@ body { background-color: rgb(42, 82, 117);
 /*homepage styling*/
 
 #title{
-    display:inline-block;
-    margin: 0 30% 0 30%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: .25em 0 2em 0;
+
 }
 
-#intro{
-    margin: 0.4rem;
-    width: 52%;
+@media(min-width:501px){
+    #intro{
+        margin: 0.4rem;
+        width:53%;
+    }
+}
+
+@media(max-width:500px){
+    #intro{
+        margin: 0.4rem;
+        width:80%;
+    }
 }
 
 /* contact me style */
