@@ -1,4 +1,4 @@
-/* all page styling */
+/* all page styles */
 body { background-color: rgb(42, 82, 117);
        margin:0;
      }
@@ -94,7 +94,7 @@ body { background-color: rgb(42, 82, 117);
 
 .navpage, a:hover{ color:rgb(255, 255, 255); }
 
-/*homepage styling*/
+/*homepage styles*/
 
 #title{
     display:flex;
