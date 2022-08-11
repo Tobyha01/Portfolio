@@ -11,7 +11,7 @@ body { background-color: rgb(42, 82, 117);
         background-color: hsla(195,50%,50%,0.7);
     }
 
-    .navpage{
+    .navlink{
         width:fit-content;
         margin:auto;
         padding:0.4vh 2.5vw;
@@ -41,7 +41,7 @@ body { background-color: rgb(42, 82, 117);
         border-radius:1.2em;  
     }
 
-    .navpage{ /*link text styles*/
+    .navlink{ /*link text styles*/
         display:flex;
         flex-direction:column;
         text-align: center;
@@ -88,11 +88,12 @@ body { background-color: rgb(42, 82, 117);
     }
 }
 
-.navpage, a:link{ color: rgb(255, 255, 255); }
 
-.navpage, a:visited{ color:rgb(0, 0, 0); }
+.navlink, a:visited{ color:rgb(0, 0, 0); }
 
-.navpage, a:hover{ color:rgb(255, 255, 255); }
+.navlink, a:hover{ color:rgb(255, 255, 255); }
+
+
 
 /*homepage styles*/
 
