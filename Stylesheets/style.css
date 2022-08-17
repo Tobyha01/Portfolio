@@ -38,7 +38,8 @@ body { background-color: rgb(42, 82, 117);
         position: absolute;
         left:-7.25em;
         top:.75em;
-        border-radius:1.2em;  
+        border-radius:1.2em;
+        z-index:1;  
     }
 
     .navlink{ /*link text styles*/
@@ -75,19 +76,6 @@ body { background-color: rgb(42, 82, 117);
         content:'Close ❌';
     }
 }
-
-@media(min-width:465px){
-    .navtoggle{
-        top:3em;
-    }
-}
-
-@media(max-width:464px){
-    .navtoggle{
-        top:6em;
-    }
-}
-
 
 .projectlink, a:link{text-decoration:none;}
 
