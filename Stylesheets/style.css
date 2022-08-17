@@ -91,9 +91,9 @@ body { background-color: rgb(42, 82, 117);
 
 .projectlink, a:link{text-decoration:none;}
 
-.navlink, .projectlink, a:visited{ color:rgb(0, 0, 0); }
+.navlink, .projectlink, .profilelink, a:visited{ color:rgb(0, 0, 0); }
 
-.navlink, .projectlink, a:hover{ color:rgb(255, 255, 255); }
+.navlink, .projectlink, .profilelink, a:hover{ color:rgb(255, 255, 255); }
 
 /*homepage styles*/
 
